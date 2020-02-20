@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Cool App</title>
+</head>
+<body>
+    
+    <button onclick="navigate()">PAY</button>
+    
+    <a href="https://preprod.phon.pe/618fema7">openDeepLink</a>
+</body>
+<script type="text/javascript">
+    setTimeout(() => {
+        var div = document.getElementById('redirect-div');
+        div.click();
+    }, 1000);
+    function navigate() {
+        var url ="intent://phonepe#Intent;scheme=phonepe;package=com.phonepe.app.preprod;S.action_nav=sso;S.redirection_data=eyJkYXRhIjpbeyJrZXkiOiJzZXNzaW9uSWQiLCJpc0VuY29kZWQiOiJmYWxzZSIsInZhbHVlIjoiU0VTU0lPTjMwOTUzNzU5MWU0NWZhNzAwNWQ4ZmU3ZGY3ZDQ4YjViNDM4NWM4NGJkMDM4YmQ5MjdlNDdlYTdlM2M5MTM2ZTUifSx7ImtleSI6InNlcnZpY2VOYW1lIiwiaXNFbmNvZGVkIjoiZmFsc2UiLCJ2YWx1ZSI6ImFwcGh1YiJ9LHsia2V5IjoiaWNvbklkIiwiaXNFbmNvZGVkIjoiZmFsc2UiLCJ2YWx1ZSI6IlJLU1RTVF8xOTExMjIxNzE4X1BQX0VYVEVSTkFMIn0seyJrZXkiOiJjbGVhclRhc2siLCJpc0VuY29kZWQiOiJmYWxzZSIsInZhbHVlIjoidHJ1ZSJ9XX0=;end";
+        window.location = url;
+    }
+</script>
+</html>
